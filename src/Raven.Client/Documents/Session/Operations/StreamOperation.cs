@@ -577,6 +577,7 @@ namespace Raven.Client.Documents.Session.Operations
                     {
                         _session.Context.CachedProperties = new CachedProperties(_session.Context);
                         ++_docsCountOnCachedRenewSession;
+                        _cachedItemsRenew = false;
                     }
                 }
                 else
